@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boissiére Stud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="bandeau" class="container">
+        <a href="index.html"><img id="logo" src="images/Logo_1-removebg-preview.png" alt="www.laboissierestud.com"></a>
+        <nav id="menuPrincipal" role="navigation">
+            <div id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="jumenterie.html">Jumenterie</a></li>
+                <li><a href="etalon.html">Etalon</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenu" class="container">
+        <h2> Nous Contacter</h2>
+        <section id="formulaire">
+            <form action="envoyerform.php" method="post" id="form">
+
+                <p>
+                    <input type="radio" name="genre" id="monsieur" value="Monsieur">Monsieur
+                    <input type="radio" name="genre" id="madame" value="Madame">Madame
+                </p>
+                <p>
+                    <input type="text" name="nom" id="nom" placeholder="Nom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                </p>
+                <p>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="tel" name="telephone" id="telephone" placeholder="téléphone">
+                </p>
+                <p>
+                    <select name="sujet" id="sujet">
+                        <option value="">Vous désirez</option>
+                        <option value="appel">être contacté par téléphone</option>
+                        <option value="appel">être contacté par E-mail</option>
+                    </select>
+                </p>
+                <p>
+                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Votre message"></textarea>
+                </p>
+                <p>
+                    <input type="reset" value="Annuler">
+                    <input type="submit" value="Envoyer">
+                </p>
+            </form>
+        </section>
+        <h2>où nous trouver ?</h2>
+        <section id="carte">
+            <p>
+                <span class="doré">La Boissière Stud</span><br>
+                87220 FEYTIAT<br>
+                FRANCE<br>
+                06.74.79.25.67<br>
+                elevageduvincou@gmail.com<br>
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.8692206772516!2d1.3198260766438694!3d45.79384771138309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fea7fa047ef33f%3A0x246b8dbb76eccd0!2sElevage%20du%20Vincou%20-%20La%20Boissi%C3%A8re%20Stud!5e0!3m2!1sfr!2sfr!4v1701856170649!5m2!1sfr!2sfr"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer id="pied" class="container">
+        <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
+        <ul>
+            <li> <a href="mentions.html">
+                    Mentions&nbsp;Légales
+                </a></li>
+            <li> <a href="https://www.facebook.com/cecile.navelet/?locale=fr_FR" target="_blank">
+                    Facebook
+                </a></li>
+            <li> <a href="contact.html">
+                    Contact
+                </a></li>
+            <li> <a href="index.html">
+                    Haut&nbsp;de&nbsp;page
+                </a></li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+       
+        $("#menuPrincipal #burger i").click(function () {
+            $("#menuPrincipal ul").addClass("on").slideToggle(1500);
+        })
+    </script>
+</body>
+
+</html>

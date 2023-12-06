@@ -1,0 +1,680 @@
+/* ===================== Config générale */
+:root {
+    --doré: #C9B821;
+    --vert: #205629;
+}
+
+
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-v30-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/roboto-v30-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-slab-v34-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-slab-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/roboto-slab-v34-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab';
+    display: inline-block;
+
+    background: linear-gradient(to bottom, #205629, #040C05);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    display: flex;
+    background-color: white;
+    text-decoration: underline var(--doré);
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+h3 {
+    font-family: 'Roboto Slab';
+    color: var(--doré);
+    font-size: 1.4rem;
+
+}
+
+h4 {
+    font-family: 'Roboto Slab';
+    color: var(--doré);
+    font-size: 1.1rem;
+}
+
+a {
+    font-family: 'Roboto Slab';
+    text-decoration: none;
+    color: var(--doré);
+}
+
+a:hover {
+    border-bottom: solid 1px var(--doré);
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1200px;
+    /* si ecran >= a 1200 pixels !*/
+    width: 100%;
+    margin: 0 auto;
+}
+#contenu #wip {
+    width: 100%;
+}
+
+/* ============================== Fin config générale */
+
+/* ============================== Header */
+#bandeau {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #205629, #040C05);
+}
+
+#bandeau img {
+    padding-left: 40px;
+}
+
+#menuPrincipal ul {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    display: none;
+}
+
+#bandeau #menuPrincipal ul.on {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#menuPrincipal {
+    width: 60%;
+}
+
+#menuPrincipal #burger {
+    display: flex;
+    font-size: 3rem;
+    color: var(--doré);
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+
+@media screen and (min-width:768px) {
+
+
+    #menuPrincipal #burger {
+        display: none;
+    }
+
+    #menuPrincipal ul {
+        display: flex;
+        /* flex-direction: row; */
+        padding-top: 9%;
+        padding-right: 4%;
+    }
+
+    #menuPrincipal #burger {
+        display: none;
+    }
+
+    #menuPrincipal ul li a:hover {
+        border-bottom: solid 1px var(--doré);
+    }
+}
+
+/* ======================= fin header */
+
+/*======================== Philosophie*/
+
+#philosophie {
+
+    margin: 20px 10px;
+    background: linear-gradient(to bottom, #205629, #040C05);
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+
+}
+
+#philosophie .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+#philosophie .picto img {
+    padding-bottom: 15px;
+}
+
+
+
+
+
+#philosophie p {
+    padding: 15px 20px;
+    color: white;
+}
+
+#philosophie h3 {
+    padding-bottom: 20px;
+}
+
+#philosophie h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+
+    #philosophie .images {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+/*======================== fin de Philosophie*/
+
+/*========================= Famille*/
+#famille {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    background: linear-gradient(to bottom, #205629, #040C05);
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+}
+
+#famille .cecile,
+#famille .louanne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    padding: 15px 20px;
+    color: white;
+
+}
+
+#famille .cecile a {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+}
+
+
+
+
+#famille .prenom {
+    color: var(--doré);
+}
+
+#famille .cecile .photoCecile {
+    width: 35%;
+    height: auto;
+}
+
+#famille .louanne .photoLouanne {
+    width: 35%;
+    height: auto;
+}
+
+
+
+#famille .louanne .texteLouanne,
+#famille .cecile .texteCecile {
+
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+#famille .louanne .listeLouanne {
+    color: var(--doré);
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:768px) {
+
+
+    #famille .cecile,
+    #famille .louanne {
+        justify-content: center;
+        padding: 15px 20px;
+        color: white;
+
+    }
+
+    /* #famille .cecile p,
+    #famille .louanne p {
+        width: 45%;
+    }  */
+
+    #famille .cecile .photoCecile {
+        width: 45%;
+    }
+
+    #famille .louanne .photoLouanne {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    #famille {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    #famille .cecile,
+    #famille .louanne {
+        flex-wrap: nowrap;
+    }
+
+    #famille .texteCecile,
+    .texteLouanne {
+        width: 48%;
+    }
+
+    #famille .cecile .photoCecile {
+        width: 48%;
+        height: auto;
+
+    }
+
+    #famille .louanne .photoLouanne {
+        width: 48%;
+        height: auto;
+
+    }
+}
+
+/*======================== fin de famille*/
+
+
+/* ======================= Actualités */
+
+#actu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #205629, #040C05);
+    margin: 20px 10px;
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+
+}
+
+#actu .photo2 {
+    display: none;
+}
+
+#actu h3 {
+    padding: 20px 20px;
+}
+
+#actu img {
+    width: 50%;
+    /* padding-top: 20px; */
+}
+
+#actu ul {
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    list-style-type: circle;
+
+}
+
+#actu .texteActu {
+    color: white;
+    margin: 20px 15px;
+
+}
+
+#actu a {
+    background-color: var(--vert);
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin-bottom: 15px;
+}
+
+
+#actu iframe {
+    margin-top: 15px;
+}
+
+
+@media screen and (min-width:768px) {
+    #actu {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+    }
+
+    #actu .photoListe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    #actu .photoListe ul {
+        padding-top: 10%;
+    }
+
+    #actu .photo1 {
+        display: none;
+    }
+
+    #actu .photo2 {
+        display: block;
+    }
+
+
+    #actu .texteActu {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #actu .texteActu img {
+        width: 48%;
+        height: auto;
+    }
+
+    #actu .texteActu2 {
+        width: 48%;
+        margin-top: 18px;
+    }
+
+    #actu a {
+        margin-left: 80%;
+        text-align: center;
+        width: 140px;
+        background-color: var(--vert);
+        border-radius: 10px;
+        padding: 5px 5px;
+        margin-bottom: 15px;
+    }
+}
+
+/* ======================= fin Actualités */
+
+/*======================== Slider*/
+.slider-wrapper {
+    background: linear-gradient(to bottom, #205629, #040C05);
+    padding: 20px 20px;
+    margin: 20px 10px;
+    ;
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+}
+
+.nivo-caption {
+    background: transparent;
+    color: black;
+    width: 40%;
+    padding: 20px 20px;
+    opacity: 1;
+    -moz-opacity: 1;
+    filter: alpha(opacity=8);
+}
+
+@media screen and (min-width:768px) {
+    #slider {
+        width: 75%;
+    }
+}
+
+/*====================================== fin Slider */
+
+/*====================================== footer */
+#pied {
+    display: flex;
+    background: linear-gradient(to bottom, #205629, #040C05);
+}
+
+#pied .copyright {
+    margin-left: 15px;
+    display: none;
+}
+
+#pied ul {
+    columns: 2;
+    padding: 15px 15px;
+
+}
+
+#pied ul li {
+    margin-left: 50%;
+
+
+}
+
+#pied ul li a:hover {
+    border-bottom: solid 1px var(--doré);
+}
+
+
+@media screen and (min-width:768px) {
+    #pied .copyright {
+        display: block;
+        font-size: 1rem;
+        padding-top: 1.5%;
+
+    }
+
+    #pied ul {
+        display: flex;
+
+
+        columns: 0;
+    }
+
+    #pied ul li {
+        margin-left: 20%;
+    }
+
+
+}
+
+/* ========================= fin footer ================ */
+/* ========================= contact =================== */
+
+#formulaire {
+    background: linear-gradient(to bottom, #205629, #040C05);
+    margin-bottom: 20px;
+}
+#formulaire p input:focus,
+#formulaire p textarea:focus{
+    outline: none;
+}
+
+#formulaire #form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 0;
+
+}
+
+#formulaire #form p{
+    
+    border-radius: 20px;
+    padding : 8px 12px;
+    margin: 10px 0;
+}
+#formulaire #form p select{
+    border: none;
+    background: none;
+    width: 100%;
+    color: var(--doré);
+    font-weight: 600;
+}
+#formulaire #form p textarea {
+    background: none;
+    border: none;
+    color: white;
+}
+#formulaire #form p:nth-of-type(1){
+    color: var(--doré);
+}
+#formulaire #form p:nth-of-type(1) input{
+    margin:0 7px;
+}
+#formulaire #form p:nth-of-type(5){
+    border: solid 1px var(--doré);
+}
+
+#formulaire #form p:nth-of-type(1),
+#formulaire #form p:nth-of-type(2),
+#formulaire #form p:nth-of-type(3),
+#formulaire #form p:nth-of-type(6){
+    border: none;
+}
+
+#formulaire #form p:nth-of-type(2) input,
+#formulaire #form p:nth-of-type(3) input,
+#formulaire #form p:nth-of-type(6) input{
+    border: 1px solid var(--doré);
+    border-radius: 20px;
+    padding : 8px 12px;
+    margin: 10px 0;
+}
+
+#formulaire #form p:nth-of-type(6) input{
+    background-color: var(--doré);
+    
+}
+
+#formulaire #form p:nth-of-type(6) input:hover{
+    background-color: var(--vert);
+}
+/* ==================== fin formulaire =============== */
+/* ==================== carte =============== */
+#carte {
+    background: linear-gradient(to bottom, #205629, #040C05);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#carte p .doré{
+    font-family: 'Roboto Slab';
+    font-size: 1.5rem;
+    color: var(--doré);
+}
+#carte p {
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+    width: 48%;
+    
+}
+#carte iframe{
+    width: 48%;
+    margin: 15px 15px 15px 0;
+}
+/* ==================== fin carte =============== */
+
+/* ==================== Mentions ================ */
+
+#mentions{
+    background: linear-gradient(to bottom, #205629, #040C05);
+    color:white;
+    padding: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+
+
+#mentions h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+    
+
+#mentions p:nth-of-type(1){
+    
+    text-align: center;
+}
+#mentions .upper{
+    text-transform: uppercase;
+}
+/* ==================== fin Mentions ================ */
