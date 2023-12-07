@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="news.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,75 +20,120 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="jumenterie.html">Jumenterie</a></li>
-                <li><a href="etalon.html">Etalon</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" id="linkIndex">Accueil</a></li>
+                <li><a href="news.html" id="linkNews">News</a></li>
+                <li><a href="jumenterie.html" id="linkJumenterie">Jumenterie</a></li>
+                <li><a href="etalon.html" id="linkEtalon">Etalon</a></li>
+                <li><a href="contact.html" id="linkContact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="contenu" class="container">
-        <h2> Nos Actualités</h2>
+    <main id="contenu" class="container mainNews">
+        <h2>Actualités</h2>
 
-        <section id="actu">
-            <img class="photo1" src="images/saut_actu.jpg" alt="www.laboissierestud.com">
-            <h3>Recherche 2 poneys taille 1m45 à 1m49 ferré. Nous étudierons toute proposition répondant aux critères:
-            </h3>
-            <div class="photoListe"><img class="photo2" src="images/saut_actu.jpg" alt="www.laboissierestud.com">
-                <ul>
-                    <li>une femelle 5 ans, bien née, BPO > + 10, à fort potentiel, pour valorisation Cycles Classiques
-                        CSO.
-                    </li>
-                    <li>un hongre ou une femelle, 7 à 12 ans, pratique, pour débuter de suite sur PElite, évolutif As2.
-                        Maison 5*. Budget < 12000€.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="actu">
-            <img class="photo1" src="images/actu_2.jpg" alt="www.laboissierestud.com">
-            <h3>Reprise des concours pour Paps Late
-            </h3>
-            <div class="texteActu"><img class="photo2" src="images/actu_2.jpg" alt="www.laboissierestud.com">
-                <p class="texteActu2">La saison de monte est déjà bien avancée. Les ponettes accueillies en monte en
-                    main à l'élevage ont
+        <section id="mesArticles" classe="container">
+            <article class="monArticle">
+                <h3>Recherche 2 poneys taille 1m45 à 1m49 ferré. Nous étudierons toute proposition répondant aux
+                    critères:</h3>
+                <img src="images/saut_actu.jpg" alt="www.laboissierestud.com">
+                <p>
+                    - une femelle 5 ans, bien née, BPO > + 10, à fort potentiel, pour valorisation Cycles Classiques
+                    CSO.
+                    <br>
+                    <br>
+                    - un hongre ou une femelle, 7 à 12 ans, pratique, pour débuter de suite sur PElite, évolutif As2.
+                    Maison 5*. Budget < 12000€. </p>
+            </article>
+            <article class="monArticle">
+                <h3>Reprise des concours pour Paps Late</h3>
+                <img src="images/actu_2.jpg" alt="www.laboissierestud.com">
+                <p>La saison de monte est déjà bien avancée. Les ponettes accueillies en monte en main à l'élevage ont
                     été honorées avec efficacité!
                     Avec la reprise des concours, Paps Late a retrouvé Oscar son cavalier avec réussite, puisqu'ils
                     terminent 2ème à l'issue du barrage de l'As Poney 1 Grand Prix de la TDA de Pompadour.
                     Paps Late reste disponible en IAC pour cette fin de saison, avec une offre génétique 100% au poulain
                     vivant et une semence d'excellente qualité!!
-                    N'hésitez pas à nous consulter.
-                </p>
-            </div>
-        </section>
-
-        <section id="actu">
-            <iframe class="photo1" width="425" height="239" src="https://www.youtube.com/embed/jTKv--FtGKM"
-                title="Paps Late*Vincou #connemarastallion  www.elevageduvincou.fr" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <h3>Reprise des concours pour Paps Late
-            </h3>
-            <div class="texteActu"> <iframe class="photo2" width="425" height="239"
-                    src="https://www.youtube.com/embed/jTKv--FtGKM"
+                    N'hésitez pas à nous consulter.</p>
+            </article>
+            <article class="monArticle">
+                <h3>Reprise des concours pour Paps Late</h3>
+                <iframe src="https://www.youtube.com/embed/jTKv--FtGKM"
                     title="Paps Late*Vincou #connemarastallion  www.elevageduvincou.fr" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                <p class="texteActu2">La saison de monte est déjà bien avancée. Les ponettes accueillies en monte en
-                    main à l'élevage ont
-                    été honorées avec efficacité!
-                    Avec la reprise des concours, Paps Late a retrouvé Oscar son cavalier avec réussite, puisqu'ils
-                    terminent 2ème à l'issue du barrage de l'As Poney 1 Grand Prix de la TDA de Pompadour.
-                    Paps Late reste disponible en IAC pour cette fin de saison, avec une offre génétique 100% au poulain
-                    vivant et une semence d'excellente qualité!!
-                    N'hésitez pas à nous consulter.
+                <p>Laissez-vous tenter en 2021:
+                    <br>
+                    - il est beau,<br>
+                    - il est bon avec un caractère irréprochable qu'il transmet,<br>
+                    - a production confirme ses qualités de père,<br>
+                    - sa semence est d'excellente qualité et vous est proposée à des conditions avantageuses grâce au
+                    contrat <span class="dore"> "objectif fertilité"</span>.
                 </p>
-            </div>
+
+            </article>
+            <article class="grandArticle">
+                <h3>Monte 2021: Objectif fertilité</h3>
+                <img src="images/actu_4.jpg" alt="www.laboissierestud.com">
+                <p>Petite réflexion d'automne.
+                    Rapide historique concernant l'utilisation de l'insémination artificielle en semence congelée chez
+                    les chevaux... et donc les poneys!
+                    En France, la monte artificielle a été autorisée pour l'espèce équine en 1986. Elle s'est développée
+                    après 1990, l'IAC ayant connu un développement exponentiel après 1993: on est passé de 33 IAC en
+                    1992 à plus de 8000 en 2018 (source annuaire Ecus 2019)!
+                    Le protocole pour optimiser la fertilité en IAC préconisait : 8 paillettes de chacune 50 millions de
+                    spermatozoïdes soit 400 millions de spermatozoïdes par dose d'insémination. Avec parfois 2 IA par
+                    cycle (Vidament, 2005). Pour un objectif de fertilité de 45% par cycle.
+                    Les pratiques ont évolué: aujourd'hui on insémine souvent avec seulement 4 paillettes, voir parfois
+                    une seule, beaucoup d'étalons étant commercialisés avec une quantité de semence limitée.
+                    J'ai fait un peu de biblio dans les publications des Haras Nationaux principalement.</p>
+
+
+                <p class="long">
+                    Ce que j'en retiens: <br><br>
+                    - CERTES la fertilité à l'IA est fonction<br>
+                    - de l'étalon<br>
+                    - de l'éjaculat<br>
+                    - de la technique de monte<br>
+                    - du nombre d'inséminations pratiquées<br>
+                    - de l'intervalle dernière insémination-ovulation (les spermatozoïdes ayant une durée de vie de
+                    12h<br>
+                    - après décongélation, il est essentiel d'inséminer au plus proche possible de l'ovulation)
+                    de la jument<br><br>
+
+                    MAIS la fertilité est AUSSI dépendante du nombre de spermatozoïdes inséminés.
+                    Aujourd'hui suivi ovarien rapproché et induction de l'ovulation sont des facteurs de réussite
+                    indispensable à l'IAC avec une quantité de paillettes restreinte.
+                    Ce qui j'y vois comme conséquences en tant que propriétaire de juments: <br><br>
+
+                    - je passe trop de temps à promener mes juments au printemps pour des suivis ovariens presque
+                    quotidiens en fin de chaleur <br>
+                    - l'induction des ovulations me pose problème <br><br>
+
+                    Lecture d'un résultat d 'enquête pratiquée dans le cadre d'une thèse à l'école vétérinaire de
+                    Toulouse (Pratique de l'insémination artificielle chez la jument en France. Suzy Loigerot, 2017),
+                    auprès de vétérinaires pratiquant l'IA dans l'espèce équine: presque 43% des vétérinaires interrogés
+                    recourent à l'induction de l'ovulation de façon systématique!
+                    Bien sur un bon vétérinaire va regarder avant de déclencher l'ovulation la taille du follicule, si
+                    l'utérus de la jument est infiltré, l'aspect du col.
+                    MAIS mon interrogation grandit quand mon étalon Paps Late, qui est un excellent souffleur, me dit
+                    que non ce n'est pas encore tout à fait le moment alors que tous les voyants sont au vert pour mon
+                    inséminateur!
+                    Et QUID sur du long terme du développement possible d' une immunité anti-hCG suite à l'utilisation
+                    du chorulon, inhibant ainsi son action, sur les vieilles juments ou les juments traitées plusieurs
+                    fois au cours d'un cycle pour induire l'ovulation?
+                    Il y a bien des espèces (les chèvres par exemple), où on limite le nombre de traitement dans la
+                    carrière de l'animal pour optimiser les résultats de fertilité. Chez les juments on en parle peu.
+                    Je reste évidemment convaincue de l'intérêt de l'IAC en élevage, mais j'ai l'impression que
+                    privilégier la quantité de semence disponible reste le meilleur levier pour améliorer la fertilité
+                    pour nous éleveurs.
+                    Pour cette raison Paps Late sera proposé en 2021 en IAC, avec un contrat de 3 doses de 8 paillettes.
+                    J'entends déjà les mauvaises langues dire... 24 paillettes,... c'est qu'il n'est pas fertile...
+                    euh... non! Fin de la discussion
+                    </p>
+            </article>
+
         </section>
-
     </main>
-
     <footer id="pied" class="container">
         <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
         <ul>
@@ -103,10 +152,10 @@
         </ul>
     </footer>
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
-
-    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script src="scripts/active.js"></script>
+    
     <script type="text/javascript">
-      
+
         $("#menuPrincipal #burger i").click(function () {
             $("#menuPrincipal ul").addClass("on").slideToggle(1500);
         })

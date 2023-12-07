@@ -115,8 +115,18 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
 #contenu #wip {
     width: 100%;
+}
+
+.active {
+    color: crimson;
+    text-decoration: underline;
+    
+}
+.active:hover {
+    color: var(--doré);
 }
 
 /* ============================== Fin config générale */
@@ -361,125 +371,11 @@ body {
 
 /*======================== fin de famille*/
 
-
-/* ======================= Actualités */
-
-#actu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: linear-gradient(to bottom, #205629, #040C05);
-    margin: 20px 10px;
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
-
-}
-
-#actu .photo2 {
-    display: none;
-}
-
-#actu h3 {
-    padding: 20px 20px;
-}
-
-#actu img {
-    width: 50%;
-    /* padding-top: 20px; */
-}
-
-#actu ul {
-    color: white;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    list-style-type: circle;
-
-}
-
-#actu .texteActu {
-    color: white;
-    margin: 20px 15px;
-
-}
-
-#actu a {
-    background-color: var(--vert);
-    border-radius: 10px;
-    padding: 5px 5px;
-    margin-bottom: 15px;
-}
-
-
-#actu iframe {
-    margin-top: 15px;
-}
-
-
-@media screen and (min-width:768px) {
-    #actu {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin-bottom: 40px;
-
-    }
-
-    #actu .photoListe {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-bottom: 20px;
-    }
-
-    #actu .photoListe ul {
-        padding-top: 10%;
-    }
-
-    #actu .photo1 {
-        display: none;
-    }
-
-    #actu .photo2 {
-        display: block;
-    }
-
-
-    #actu .texteActu {
-        display: flex;
-        justify-content: space-between;
-
-
-    }
-
-    #actu .texteActu img {
-        width: 48%;
-        height: auto;
-    }
-
-    #actu .texteActu2 {
-        width: 48%;
-        margin-top: 18px;
-    }
-
-    #actu a {
-        margin-left: 80%;
-        text-align: center;
-        width: 140px;
-        background-color: var(--vert);
-        border-radius: 10px;
-        padding: 5px 5px;
-        margin-bottom: 15px;
-    }
-}
-
-/* ======================= fin Actualités */
-
 /*======================== Slider*/
 .slider-wrapper {
     background: linear-gradient(to bottom, #205629, #040C05);
     padding: 20px 20px;
     margin: 20px 10px;
-    ;
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
 }
 
@@ -501,9 +397,12 @@ body {
 
 /*====================================== fin Slider */
 
+
+
+
 /*====================================== footer */
 #pied {
-    display: flex;
+    
     background: linear-gradient(to bottom, #205629, #040C05);
 }
 
@@ -513,13 +412,14 @@ body {
 }
 
 #pied ul {
+
     columns: 2;
     padding: 15px 15px;
 
 }
 
 #pied ul li {
-    margin-left: 50%;
+    margin: 0 15px;
 
 
 }
@@ -534,19 +434,17 @@ body {
         display: block;
         font-size: 1rem;
         padding-top: 1.5%;
+        text-align: center;
 
     }
 
     #pied ul {
         display: flex;
-
-
-        columns: 0;
+        justify-content: center;
+        margin: 0 15px;
     }
 
-    #pied ul li {
-        margin-left: 20%;
-    }
+    #pied ul li {}
 
 
 }
@@ -558,72 +456,82 @@ body {
     background: linear-gradient(to bottom, #205629, #040C05);
     margin-bottom: 20px;
 }
+
 #formulaire p input:focus,
-#formulaire p textarea:focus{
+#formulaire p textarea:focus {
     outline: none;
 }
 
-#formulaire #form{
-    
+#formulaire #form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:20px 0;
+    padding: 20px 0;
+    width: 100%;
+
 
 }
 
-#formulaire #form p{
-    
+#formulaire #form p {
+
     border-radius: 20px;
-    padding : 8px 12px;
+    padding: 8px 12px;
     margin: 10px 0;
 }
-#formulaire #form p select{
+
+#formulaire #form p select {
     border: none;
     background: none;
     width: 100%;
     color: var(--doré);
     font-weight: 600;
 }
+
 #formulaire #form p textarea {
     background: none;
     border: none;
     color: white;
+
 }
-#formulaire #form p:nth-of-type(1){
+
+#formulaire #form p:nth-of-type(1) {
     color: var(--doré);
 }
-#formulaire #form p:nth-of-type(1) input{
-    margin:0 7px;
+
+#formulaire #form p:nth-of-type(1) input {
+    margin: 0 7px;
 }
-#formulaire #form p:nth-of-type(5){
+
+#formulaire #form p:nth-of-type(5) {
     border: solid 1px var(--doré);
 }
 
 #formulaire #form p:nth-of-type(1),
 #formulaire #form p:nth-of-type(2),
 #formulaire #form p:nth-of-type(3),
-#formulaire #form p:nth-of-type(6){
+#formulaire #form p:nth-of-type(6) {
     border: none;
 }
 
 #formulaire #form p:nth-of-type(2) input,
 #formulaire #form p:nth-of-type(3) input,
-#formulaire #form p:nth-of-type(6) input{
+#formulaire #form p:nth-of-type(6) input {
     border: 1px solid var(--doré);
     border-radius: 20px;
-    padding : 8px 12px;
+    padding: 8px 12px;
     margin: 10px 0;
 }
 
-#formulaire #form p:nth-of-type(6) input{
+#formulaire #form p:nth-of-type(6) input {
     background-color: var(--doré);
-    
+
 }
 
-#formulaire #form p:nth-of-type(6) input:hover{
+#formulaire #form p:nth-of-type(6) input:hover {
     background-color: var(--vert);
 }
+
 /* ==================== fin formulaire =============== */
 /* ==================== carte =============== */
 #carte {
@@ -632,29 +540,33 @@ body {
     display: flex;
     justify-content: space-between;
 }
-#carte p .doré{
+
+#carte p .doré {
     font-family: 'Roboto Slab';
     font-size: 1.5rem;
     color: var(--doré);
 }
+
 #carte p {
     text-align: center;
     margin-top: 5%;
     color: white;
     width: 48%;
-    
+
 }
-#carte iframe{
+
+#carte iframe {
     width: 48%;
     margin: 15px 15px 15px 0;
 }
+
 /* ==================== fin carte =============== */
 
 /* ==================== Mentions ================ */
 
-#mentions{
+#mentions {
     background: linear-gradient(to bottom, #205629, #040C05);
-    color:white;
+    color: white;
     padding: 15px;
     text-align: justify;
     margin-bottom: 20px;
@@ -662,19 +574,21 @@ body {
 
 
 
-#mentions h4{
+#mentions h4 {
     margin-top: 20px;
     margin-bottom: 10px;
 
 }
 
-    
 
-#mentions p:nth-of-type(1){
-    
+
+#mentions p:nth-of-type(1) {
+
     text-align: center;
 }
-#mentions .upper{
+
+#mentions .upper {
     text-transform: uppercase;
 }
+
 /* ==================== fin Mentions ================ */

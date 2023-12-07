@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="nivo-slider.css">
+    <link rel="stylesheet" href="news.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,15 +22,15 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="jumenterie.html">Jumenterie</a></li>
-                <li><a href="etalon.html">Etalon</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" id="linkIndex">Accueil</a></li>
+                <li><a href="news.html" id="linkNews">News</a></li>
+                <li><a href="jumenterie.html" id="linkJumenterie">Jumenterie</a></li>
+                <li><a href="etalon.html" id="linkEtalon">Etalon</a></li>
+                <li><a href="contact.html" id="linkContact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="contenu" class="container">
+    <main id="contenu" class="container mainIndex">
         <h2 class="titres">Les poneys : la passion au quotidien </h2>
         <section id="philosophie">
             <figure class="picto">
@@ -107,27 +108,23 @@
         </section>
 
         <h2>Actualités</h2>
-        <section id="actu">
-            <img class="photo1" src="images/saut_actu.jpg" alt="www.laboissierestud.com">
-            <h3>Recherche 2 poneys taille 1m45 à 1m49 ferré. Nous étudierons toute proposition répondant aux critères:
-            </h3>
-            <div class="photoListe"><img class="photo2" src="images/saut_actu.jpg" alt="www.laboissierestud.com">
-                <ul>
-                    <li>une femelle 5 ans, bien née, BPO > + 10, à fort potentiel, pour valorisation Cycles Classiques
-                        CSO.
-                    </li>
-                    <li>un hongre ou une femelle, 7 à 12 ans, pratique, pour débuter de suite sur PElite, évolutif As2.
-                        Maison 5*. Budget < 12000€.</li>
-                </ul>
-            </div>
-            <a href="news.html">Plus d'actualités</a>
 
-
-
+        <section id="mesArticles">
+            <article class="monArticle">
+                <h3>Reprise des concours pour Paps Late</h3>
+                <img src="images/actu_2.jpg" alt="www.laboissierestud.com">
+                <p>La saison de monte est déjà bien avancée. Les ponettes accueillies en monte en main à l'élevage ont
+                    été honorées avec efficacité!
+                    Avec la reprise des concours, Paps Late a retrouvé Oscar son cavalier avec réussite, puisqu'ils
+                    terminent 2ème à l'issue du barrage de l'As Poney 1 Grand Prix de la TDA de Pompadour.
+                    Paps Late reste disponible en IAC pour cette fin de saison, avec une offre génétique 100% au poulain
+                    vivant et une semence d'excellente qualité!!
+                    N'hésitez pas à nous consulter.</p>
+                <a href="news2.html">Plus d'actualités</a>
+            </article>
         </section>
+
         <h2>Nos Juments</h2>
-
-
         <!-- Slider nivo slider  -->
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider container">
@@ -156,7 +153,7 @@
     </main>
 
     <footer id="pied" class="container">
-        <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
+
         <ul>
             <li> <a href="mentions.html">
                     Mentions&nbsp;Légales
@@ -168,13 +165,15 @@
                     Contact
                 </a></li>
             <li> <a href="index.html">
-                    Haut&nbsp;de&nbsp;page
+                    <i class="fa-solid fa-circle-up"></i> Haut&nbsp;de&nbsp;page <i class="fa-solid fa-circle-up"></i>
                 </a></li>
         </ul>
+        <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
     </footer>
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
 
     <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script src="scripts/active.js"></script>
     <script type="text/javascript">
         $(window).load(function () {
             $('#slider').nivoSlider();
