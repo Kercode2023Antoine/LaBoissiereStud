@@ -11,10 +11,11 @@
     display: grid;
     grid-template-columns: auto-fill ;
     grid-template-rows: repeat(3, auto-fill);
-    margin: 10px 0;
+    margin: 20px 10px;
     padding: 0 20px;
     color: white;
     gap: 20px;
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
     
 }
 
@@ -57,10 +58,11 @@
     display: grid;
     grid-template-columns: auto-fill ;
     grid-template-rows: repeat(3, auto-fill);
-    margin: 10px;
+    margin: 20px 10px;
     padding: 0 20px;
     color: white;
     gap: 20px;
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
 }
 #mesArticles .grandArticle h3{
     grid-area: 1/1/2/2;
@@ -89,9 +91,10 @@
         display: grid;
         grid-template-columns:repeat(3, auto-fill)  ;
         grid-template-rows: repeat(2, auto-fill);
-        margin: 10px 20px;
+        margin: 20px 10px;
         color: white;
         gap: 20px;
+
 }
 
 #mesArticles .monArticle h3{
@@ -129,7 +132,7 @@
     display: grid;
     grid-template-columns:repeat(3, auto-fill) ;
     grid-template-rows: repeat(3, auto-fill);
-    margin: 10px;
+    margin : 20px 10px;
     padding: 0 20px;
     color: white;
     gap: 20px;
