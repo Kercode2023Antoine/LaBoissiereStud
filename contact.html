@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Boissiére Stud</title>
+    <title>La Boissière Stud - Contact </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,12 +52,16 @@
                     </select>
                 </p>
                 <p>
-                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Votre message"></textarea>
+                    <textarea name="message" id="message" cols="45" rows="10" placeholder="Votre message"></textarea>
                 </p>
-                
+                <p>
+                    <input type="checkbox" id="rgpd" name="rgpd" value="rgpd" ><label for="rgpd">J'autorise ce site à utiliser mes données personnelles
+                        selon la <a href="mentions.html">politique de Confidentialité</a>
+                    </label>
+                </p>
                 <p>
                     <input type="reset" value="Annuler">
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Envoyer" id="envoyer" disabled>
                 </p>
             </form>
         </section>
@@ -99,6 +103,7 @@
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
 
     <script src="scripts/active.js"></script>
+    <script src="scripts/rgpd.js"></script>
     <script type="text/javascript">
        
         $("#menuPrincipal #burger i").click(function () {

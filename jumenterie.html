@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Boissiére Stud</title>
+    <title>La Boissière Stud - Jumenterie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="jumenterie.css">
+        <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,43 +34,44 @@
         <section id="juments">
             <div class="carteJument">
                 <h3>Olyden Misty Silles - Connemara</h3>
-                <div class="imgDiv"><img src="images-slider/jument1.jpg" alt=""></div>
+                <div class="imgDiv"><a href="images-slider/jument1.jpg" data-lightbox="juments" alt=""><img src="images-slider/jument1.jpg" alt=""></a></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
                     perspiciatis recusandae rem fugit in neque soluta!</p>
             </div>
             <div class="carteJument">
-                <h3>Belle Dame Vincou - PFS</h3>
-                <div class="imgDiv"><img src="images-slider/jument2.jpg" alt=""></div>
+                <h3>Belle Dame Vincou -<br> PFS</h3>
+                <div class="imgDiv"><a href="images-slider/jument2.jpg" data-lightbox="juments"><img src="images-slider/jument2.jpg" alt=""></a></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
                     perspiciatis recusandae rem fugit in neque soluta!</p>
             </div>
             <div class="carteJument">
-                <h3>Kissma Dame Vincou - PFS</h3>
-                <div class="imgDiv"><img src="images-slider/jument3.jpg" alt=""></div>
+                <h3>Kissma Dame Vincou -<br> PFS</h3>
+                <div class="imgDiv"><a href="images-slider/jument3.jpg" data-lightbox="juments"><img src="images-slider/jument3.jpg" alt=""></a></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
                     perspiciatis recusandae rem fugit in neque soluta!</p>
             </div>
             <div class="carteJument">
                 <h3>Razzia La Fraquette - Connemara</h3>
-                <div class="imgDiv"><img src="images-slider/jument4.jpg" alt=""></div>
+                <div class="imgDiv"><a href="images-slider/jument4.jpg" data-lightbox="juments"><img src="images-slider/jument4.jpg" alt=""></a></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
                     perspiciatis recusandae rem fugit in neque soluta!</p>
             </div>
             <div class="carteJument">
                 <h3>Olyden Misty Silles - Connemara</h3>
-                <div class="imgDiv"><img src="images-slider/jument1.jpg" alt=""></div>
+                <div class="imgDiv"><a href="images-slider/jument1.jpg" data-lightbox="juments" alt=""><img src="images-slider/jument1.jpg" alt=""></a></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
                     perspiciatis recusandae rem fugit in neque soluta!</p>
             </div>
             <div class="carteJument">
                 <h3>Olyden Misty Silles - Connemara</h3>
-                <div class="imgDiv"><img src="images-slider/jument1.jpg" alt=""></div>
+                <div class="imgDiv"><a href="images-slider/jument1.jpg" data-lightbox="juments" alt=""><img src="images-slider/jument1.jpg" alt=""></a></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
                     perspiciatis recusandae rem fugit in neque soluta!</p>
             </div>
 
         </section>
-
+       
+      
 
     </main>
     <footer id="pied" class="container">
@@ -94,6 +95,7 @@
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
 
     <script src="scripts/active.js"></script>
+    <script src="scripts/lightbox.js"></script>
     <script type="text/javascript">
 
         $("#menuPrincipal #burger i").click(function () {
