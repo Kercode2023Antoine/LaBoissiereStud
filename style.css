@@ -122,7 +122,8 @@ body {
 
 .active {
     color: crimson;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    
     
 }
 .active:hover {
@@ -384,9 +385,7 @@ body {
     color: black;
     width: 40%;
     padding: 20px 20px;
-    opacity: 1;
-    -moz-opacity: 1;
-    filter: alpha(opacity=8);
+    
 }
 
 @media screen and (min-width:768px) {
@@ -539,6 +538,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    min-height: 250px;
 }
 
 #carte p .doré {
@@ -549,7 +549,7 @@ body {
 
 #carte p {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 6%;
     color: white;
     width: 48%;
 

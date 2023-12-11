@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="jumenterie.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,10 +29,52 @@
         </nav>
     </header>
     <main id="contenu" class="container mainJumenterie">
-        <img id="wip" src="images/wip.jpg" alt="">
+        <!-- <img id="wip" src="images/wip.jpg" alt=""> -->
+
+        <section id="juments">
+            <div class="carteJument">
+                <h3>Olyden Misty Silles - Connemara</h3>
+                <div class="imgDiv"><img src="images-slider/jument1.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
+                    perspiciatis recusandae rem fugit in neque soluta!</p>
+            </div>
+            <div class="carteJument">
+                <h3>Belle Dame Vincou - PFS</h3>
+                <div class="imgDiv"><img src="images-slider/jument2.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
+                    perspiciatis recusandae rem fugit in neque soluta!</p>
+            </div>
+            <div class="carteJument">
+                <h3>Kissma Dame Vincou - PFS</h3>
+                <div class="imgDiv"><img src="images-slider/jument3.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
+                    perspiciatis recusandae rem fugit in neque soluta!</p>
+            </div>
+            <div class="carteJument">
+                <h3>Razzia La Fraquette - Connemara</h3>
+                <div class="imgDiv"><img src="images-slider/jument4.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
+                    perspiciatis recusandae rem fugit in neque soluta!</p>
+            </div>
+            <div class="carteJument">
+                <h3>Olyden Misty Silles - Connemara</h3>
+                <div class="imgDiv"><img src="images-slider/jument1.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
+                    perspiciatis recusandae rem fugit in neque soluta!</p>
+            </div>
+            <div class="carteJument">
+                <h3>Olyden Misty Silles - Connemara</h3>
+                <div class="imgDiv"><img src="images-slider/jument1.jpg" alt=""></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam quidem! Debitis, eum
+                    perspiciatis recusandae rem fugit in neque soluta!</p>
+            </div>
+
+        </section>
+
+
     </main>
     <footer id="pied" class="container">
-        <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
+
         <ul>
             <li> <a href="mentions.html">
                     Mentions&nbsp;Légales
@@ -42,16 +85,17 @@
             <li> <a href="contact.html">
                     Contact
                 </a></li>
-            <li> <a href="index.html">
-                    Haut&nbsp;de&nbsp;page
+            <li> <a href="jumenterie.html">
+                    <i class="fa-solid fa-circle-up"></i> Haut&nbsp;de&nbsp;page <i class="fa-solid fa-circle-up"></i>
                 </a></li>
         </ul>
+        <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
     </footer>
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
 
     <script src="scripts/active.js"></script>
     <script type="text/javascript">
-       
+
         $("#menuPrincipal #burger i").click(function () {
             $("#menuPrincipal ul").addClass("on").slideToggle(1500);
         })
