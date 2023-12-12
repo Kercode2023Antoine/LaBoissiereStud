@@ -1,32 +1,31 @@
-/* - lignes 25 à 158 : Confinguration générale
-   - lignes 163 à 199 : Header
-   - lignes 202 à 223 : MediaQuerries Header
-   - lignes 229 à 267 : Philosophie 
-   - lignes 271 à 281 : MediaQuerries Philosophie
-   - lignes 286 à 336 : Famille
-   - lignes 339 à 391 : MediaQuerries famille
-   - lignes 396 à 484 : Actualités/News 
-   - lignes 488 à 561 : MediaQuerries Actualités/News
-   - lignes 565 à 578 : Slider
-   - lignes 580 à 584 : MediaQuerries Slider
-   - lignes 592 à 617 : Footer 
-   - lignes 620 à 634 : MediaQuerries Footer 
-   - lignes 639 à 722 : Formulaire 
-   - lignes 725 à 751 : Carte
-   - lignes 757 à 782 : Mentions légales 
-   - lignes 789 à 832 : Jumenterie */
-   
-   
-   
+/* - lignes 25 Ã  168 : Confinguration gÃ©nÃ©rale
+   - lignes 172 Ã  208 : Header
+   - lignes 211 Ã  232 : MediaQuerries Header
+   - lignes 238 Ã  277 : Philosophie 
+   - lignes 281 Ã  291 : MediaQuerries Philosophie
+   - lignes 296 Ã  347 : Famille
+   - lignes 353 Ã  397 : MediaQuerries famille
+   - lignes 402 Ã  495 : ActualitÃ©s/News 
+   - lignes 500 Ã  575 : MediaQuerries ActualitÃ©s/News
+   - lignes 580 Ã  593 : Slider
+   - lignes 595 Ã  599 : MediaQuerries Slider
+   - lignes 607 Ã  632 : Footer 
+   - lignes 635 Ã  649 : MediaQuerries Footer 
+   - lignes 655 Ã  740 : Formulaire 
+   - lignes 744 Ã  771 : Carte
+   - lignes 777 Ã  802 : Mentions lÃ©gales 
+   - lignes 809 Ã  857 : Jumenterie */
 
 
 
-/* ===================== Config générale */
+
+
+/* ===================== Config gÃ©nÃ©rale ============================================ */
+
 :root {
-    --doré: #C9B821;
+    --dorÃ©: #C9B821;
     --vert: #205629;
 }
-
 
 
 /* roboto-regular - latin */
@@ -96,7 +95,7 @@ h2 {
 h2 {
     display: flex;
     background-color: white;
-    text-decoration: underline var(--doré);
+    text-decoration: underline var(--dorÃ©);
     justify-content: center;
     text-align: center;
     margin-top: 15px;
@@ -104,27 +103,36 @@ h2 {
 
 }
 
+#hautPage {
+    color: var(--dorÃ©);
+    cursor: pointer;
+}
+
+#hautPage:hover {
+    text-decoration: underline;
+}
+
 h3 {
     font-family: 'Roboto Slab';
-    color: var(--doré);
+    color: var(--dorÃ©);
     font-size: 1.4rem;
 
 }
 
 h4 {
     font-family: 'Roboto Slab';
-    color: var(--doré);
+    color: var(--dorÃ©);
     font-size: 1.1rem;
 }
 
 a {
     font-family: 'Roboto Slab';
     text-decoration: none;
-    color: var(--doré);
+    color: var(--dorÃ©);
 }
 
 a:hover {
-    border-bottom: solid 1px var(--doré);
+    border-bottom: solid 1px var(--dorÃ©);
 }
 
 body {
@@ -150,16 +158,17 @@ body {
 .active {
     color: crimson;
     /* text-decoration: underline; */
-    
-    
+
+
 }
+
 .active:hover {
-    color: var(--doré);
+    color: var(--dorÃ©);
 }
 
-/* ============================== Fin config générale */
+/* ============================== Fin config gÃ©nÃ©rale ==================================== */
 
-/* ============================== Header */
+/* ============================== Header ================================================== */
 #bandeau {
     display: flex;
     justify-content: space-between;
@@ -172,16 +181,19 @@ body {
 
 #menuPrincipal ul {
     display: flex;
-    justify-content: space-between;
     text-transform: uppercase;
+    justify-content: space-between;
     font-size: 1.2rem;
     padding-bottom: 5px;
     display: none;
 }
 
+
 #bandeau #menuPrincipal ul.on {
     flex-direction: column;
-    justify-content: flex-start;
+    float: right;
+    margin-right: 20px;
+    
 }
 
 #menuPrincipal {
@@ -191,7 +203,7 @@ body {
 #menuPrincipal #burger {
     display: flex;
     font-size: 3rem;
-    color: var(--doré);
+    color: var(--dorÃ©);
     justify-content: flex-end;
     padding-right: 10px;
     padding-top: 10px;
@@ -218,22 +230,25 @@ body {
     }
 
     #menuPrincipal ul li a:hover {
-        border-bottom: solid 1px var(--doré);
+        border-bottom: solid 1px var(--dorÃ©);
     }
 }
 
-/* ======================= fin header */
+/* ======================= fin header ======================================= */
 
-/*======================== Philosophie*/
+/*======================== Philosophie ======================================== */
 
 #philosophie {
 
     margin: 20px 10px;
+    padding: 20px;
     background: linear-gradient(to bottom, #205629, #040C05);
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
 
 }
-
+#philosophie img {
+    width: 25%;
+}
 #philosophie .images {
     display: flex;
     flex-direction: column;
@@ -280,13 +295,14 @@ body {
     }
 }
 
-/*======================== fin de Philosophie*/
+/*======================== fin de Philosophie ======================================= */
 
-/*========================= Famille*/
+/*========================= Famille ================================================== */
 #famille {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 10px;
+    padding: 20px;
     background: linear-gradient(to bottom, #205629, #040C05);
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
 }
@@ -308,7 +324,7 @@ body {
 }
 
 #famille .prenom {
-    color: var(--doré);
+    color: var(--dorÃ©);
 }
 
 #famille .cecile .photoCecile {
@@ -330,7 +346,7 @@ body {
 }
 
 #famille .louanne .listeLouanne {
-    color: var(--doré);
+    color: var(--dorÃ©);
     display: flex;
     justify-content: center;
 }
@@ -346,11 +362,6 @@ body {
         color: white;
 
     }
-
-    /* #famille .cecile p,
-    #famille .louanne p {
-        width: 45%;
-    }  */
 
     #famille .cecile .photoCecile {
         width: 45%;
@@ -394,32 +405,30 @@ body {
 
 /* ==================== Actualités/news ===================== */
 #mesArticles {
-    
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    
+    background: linear-gradient(to bottom, #205629, #040C05);
+    padding: 20px;
+    margin : 20px 10px;
+    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+
 }
 
 
-#mesArticles .monArticle {
-    background: linear-gradient(to bottom, #205629, #040C05);
+#mesArticles .monArticle {    
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     margin: 20px 10px;
-    padding: 0 20px;
+    padding: 20px;
     color: white;
     gap: 20px;
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
-    
 }
 
-#mesArticles .monArticle a{
+#mesArticles .monArticle a {
     display: none;
 }
 
 
-#mesArticles .monArticle h3{
+#mesArticles .monArticle h3 {
     grid-area: 1/1/2/2;
     padding-top: 10px;
     text-align: center;
@@ -428,59 +437,64 @@ body {
 #mesArticles .monArticle img {
     grid-area: 2/1/3/2;
     width: 100%;
-    
+
 }
+
 #mesArticles .monArticle iframe {
     grid-area: 2/1/3/2;
     width: 100%;
-    
+
 }
-#mesArticles .monArticle p{
+
+#mesArticles .monArticle p {
     grid-area: 3/1/4/2;
     padding: 10px;
     line-height: 1.3;
     text-align: justify;
 }
 
-#mesArticles .monArticle p .dore{
+#mesArticles .monArticle p .dore {
     color: #C9B821;
     font-size: 1.2rem;
     font-family: 'Roboto Slab';
 }
 
-#mesArticles .grandArticle{
-    background: linear-gradient(to bottom, #205629, #040C05);
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: repeat(3, auto);
+#mesArticles .grandArticle {
     
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+
     margin: 20px 10px;
-    padding: 0 20px;
+    padding: 20px;
     color: white;
     gap: 20px;
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    
 }
-#mesArticles .grandArticle h3{
+
+#mesArticles .grandArticle h3 {
     grid-area: 1/1/2/2;
     padding-top: 10px;
     text-align: center;
 }
-#mesArticles .grandArticle img{
+
+#mesArticles .grandArticle img {
     grid-area: 2/1/3/2;
     min-height: 250px;
     width: 100%;
 }
 
-#mesArticles .grandArticle p{
+#mesArticles .grandArticle p {
     grid-area: 3/1/4/2;
-    padding: 0px 10px ;    
+    padding: 0px 10px;
     text-align: justify;
-    line-height: 1.3; 
-    margin-bottom: 20px;   
+    line-height: 1.3;
+    margin-bottom: 20px;
 }
-#mesArticles .grandArticle p:last-of-type{
+
+#mesArticles .grandArticle p:last-of-type {
     display: none;
-    
+
 }
 
 
@@ -488,83 +502,87 @@ body {
 @media screen and (min-width: 768px) {
     #mesArticles .monArticle {
         display: grid;
-        grid-template-columns:repeat(3, auto-fill)  ;
+        grid-template-columns: repeat(3, auto-fill);
         grid-template-rows: repeat(2, auto-fill);
         margin: 20px 10px;
+        padding: 20px;
         color: white;
         gap: 20px;
 
+    }
+
+    #mesArticles .monArticle h3 {
+        grid-area: 1/1/2/4;
+        padding-top: 10px;
+        text-align: start;
+    }
+
+    #mesArticles .monArticle img {
+        grid-area: 2/1/3/2;
+
+
+    }
+
+    #mesArticles .monArticle iframe {
+        grid-area: 2/1/3/2;
+
+
+    }
+
+    #mesArticles .monArticle p {
+        grid-area: 2/2/4/4;
+
+    }
+
+    #mesArticles .monArticle a {
+        display: block;
+        grid-area: 3/3/4/4;
+        width: 140px;
+        background-color: var(--vert);
+        border-radius: 10px;
+        padding: 5px 5px;
+        margin-bottom: 15px;
+    }
+
+    #mesArticles .grandArticle {
+        
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        margin: 20px 10px;
+        padding: 20px;
+        color: white;
+        gap: 20px;
+    }
+
+    #mesArticles .grandArticle h3 {
+        grid-area: 1/1/2/4;
+        padding-top: 10px;
+        text-align: start;
+    }
+
+    #mesArticles .grandArticle img {
+        grid-area: 2/1/3/2;
+    }
+
+    #mesArticles .grandArticle p {
+        grid-area: 2/2/4/4;
+    }
 }
 
-#mesArticles .monArticle h3{
-    grid-area: 1/1/2/4;
-    padding-top: 10px;
-    text-align: start;
-}   
-
-#mesArticles .monArticle img {
-    grid-area: 2/1/3/2;
-    
-    
-}
-#mesArticles .monArticle iframe {
-    grid-area: 2/1/3/2;
-    
-    
-}
-#mesArticles .monArticle p{
-    grid-area: 2/2/4/4;
-    
-}
-#mesArticles .monArticle a{
-    display: block;
-    grid-area: 3/3/4/4;
-    width: 140px;
-    background-color: var(--vert);
-    border-radius: 10px;
-    padding: 5px 5px;
-    margin-bottom: 15px;
+@media screen and (min-width: 1050px) {
+    #mesArticles .grandArticle p:last-of-type {
+        display: block;
+        grid-area: 3/1/4/4
+    }
 }
 
-#mesArticles .grandArticle{
-    background: linear-gradient(to bottom, #205629, #040C05);
-    display: grid;
-    grid-template-columns:repeat(3, auto) ;
-    grid-template-rows: repeat(3, auto);
-    margin : 20px 10px;
-    padding: 0 20px;
-    color: white;
-    gap: 20px;
-}
-#mesArticles .grandArticle h3{
-    grid-area: 1/1/2/4;
-    padding-top: 10px;
-    text-align: start;
-}
-#mesArticles .grandArticle img{
-    grid-area: 2/1/3/2;
-}
-
-#mesArticles .grandArticle p{
-    grid-area: 2/2/4/4;
-    
-    
-    
-}
-}
-@media screen and (min-width: 1050px){
-#mesArticles .grandArticle p:last-of-type{
-    display: block;
-    grid-area: 3/1/4/4
-    
-}
-}
-/* ==================== Fin Actualités/News ===================== */
+/* ==================== Fin ActualitÃ©s/News ===================== */
 
 /*======================== Slider ================================ */
 .slider-wrapper {
     background: linear-gradient(to bottom, #205629, #040C05);
-    padding: 20px 20px;
+    padding: 20px;
     margin: 20px 10px;
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
 }
@@ -574,9 +592,11 @@ body {
     color: black;
     width: 40%;
     padding: 20px 20px;
-    
-}
 
+}
+  .nivoSlider a.nivo-imageLink:hover{
+    opacity: 0.1;
+}
 @media screen and (min-width:768px) {
     #slider {
         width: 75%;
@@ -590,7 +610,7 @@ body {
 
 /*====================================== footer ====================== */
 #pied {
-    
+
     background: linear-gradient(to bottom, #205629, #040C05);
 }
 
@@ -613,7 +633,7 @@ body {
 }
 
 #pied ul li a:hover {
-    border-bottom: solid 1px var(--doré);
+    border-bottom: solid 1px var(--dorÃ©);
 }
 
 
@@ -632,11 +652,13 @@ body {
         margin: 0 15px;
     }
 }
+
 /* ========================= fin footer ================ */
 
 /* ========================= Formulaire =================== */
 
 #formulaire {
+    padding: 20px;
     margin: 20px 10px;
     background: linear-gradient(to bottom, #205629, #040C05);
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
@@ -669,7 +691,7 @@ body {
     border: none;
     background: none;
     width: 100%;
-    color: var(--doré);
+    color: var(--dorÃ©);
     font-weight: 600;
 }
 
@@ -677,11 +699,11 @@ body {
     background: none;
     border: none;
     color: white;
-    
+
 }
 
 #formulaire #form p:nth-of-type(1) {
-    color: var(--doré);
+    color: var(--dorÃ©);
 }
 
 #formulaire #form p:nth-of-type(1) input {
@@ -689,7 +711,7 @@ body {
 }
 
 #formulaire #form p:nth-of-type(5) {
-    border: solid 1px var(--doré);
+    border: solid 1px var(--dorÃ©);
 }
 
 #formulaire #form p:nth-of-type(1),
@@ -702,28 +724,31 @@ body {
 #formulaire #form p:nth-of-type(2) input,
 #formulaire #form p:nth-of-type(3) input,
 #formulaire #form p:nth-of-type(7) input {
-    border: 1px solid var(--doré);
+    border: 1px solid var(--dorÃ©);
     border-radius: 20px;
     padding: 8px 12px;
     margin: 10px 0;
 }
 
 #formulaire #form p:nth-of-type(7) input {
-    background-color: var(--doré);
+    background-color: var(--dorÃ©);
 
 }
 
 #formulaire #form p:nth-of-type(7) input:hover {
     background-color: var(--vert);
 }
-#formulaire #form p:nth-of-type(6){
+
+#formulaire #form p:nth-of-type(6) {
     color: white;
     margin: 10px;
 }
+
 /* ==================== fin formulaire =============== */
 /* ==================== carte =============== */
 #carte {
     margin: 20px 10px;
+    padding: 20px;
     background: linear-gradient(to bottom, #205629, #040C05);
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
     display: flex;
@@ -731,10 +756,10 @@ body {
     min-height: 250px;
 }
 
-#carte p .doré {
+#carte p .dorÃ© {
     font-family: 'Roboto Slab';
     font-size: 1.5rem;
-    color: var(--doré);
+    color: var(--dorÃ©);
 }
 
 #carte p {
@@ -757,9 +782,9 @@ body {
 #mentions {
     background: linear-gradient(to bottom, #205629, #040C05);
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: justify;
-    margin-bottom: 20px;
+    margin: 20px 10px;
 }
 
 
@@ -774,7 +799,7 @@ body {
 
 #mentions p:nth-of-type(1) {
 
-    text-align: center;
+    text-align: justify;
 }
 
 #mentions .upper {
@@ -790,43 +815,46 @@ body {
     background: linear-gradient(to bottom, #205629, #040C05);
     display: grid;
     margin: 20px 10px;
+    padding: 20px;
     grid-template-columns: repeat(auto-fill, 330px);
     gap: 30px;
     justify-content: center;
     box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
-    
+
 }
 
-#juments .carteJument{
+#juments .carteJument {
     width: 330px;
-    margin:30px auto;
+    margin: 30px auto;
     display: grid;
-    grid-template-columns: auto-fill ;
+    grid-template-columns: auto-fill;
     grid-template-rows: repeat(3, auto);
-    border: 1px solid var(--doré);
+    border: 1px solid var(--dorÃ©);
     border-radius: 25px;
     box-shadow: 4px 8px 8px 8px rgba(33, 33, 33, 0.5);
-    
+
 }
-#juments .carteJument .imgDiv img{
+
+#juments .carteJument .imgDiv img {
     width: 100%;
 }
 
-#juments .carteJument .imgDiv{
+#juments .carteJument .imgDiv {
     grid-area: 2/1/3/2;
 }
 
-#juments .carteJument h3{
+#juments .carteJument h3 {
     grid-area: 1/1/2/2;
     margin: 5px 10px;
 }
 
-#juments .carteJument p{
+#juments .carteJument p {
     grid-area: 3/1/4/2;
     color: white;
     margin: 10px 5px;
 }
-#juments .carteJument .imgDiv a:hover{
+
+#juments .carteJument .imgDiv a:hover {
     border-bottom: none;
     opacity: 0.6;
 }
