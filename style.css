@@ -23,7 +23,7 @@
 /* ===================== Config gÃ©nÃ©rale ============================================ */
 
 :root {
-    --dorÃ©: #C9B821;
+    --dorée: #C9B821;
     --vert: #205629;
 }
 
@@ -95,7 +95,7 @@ h2 {
 h2 {
     display: flex;
     background-color: white;
-    text-decoration: underline var(--dorÃ©);
+    text-decoration: underline var(--dorée);
     justify-content: center;
     text-align: center;
     margin-top: 15px;
@@ -104,7 +104,7 @@ h2 {
 }
 
 #hautPage {
-    color: var(--dorÃ©);
+    color: var(--dorée);
     cursor: pointer;
 }
 
@@ -114,25 +114,25 @@ h2 {
 
 h3 {
     font-family: 'Roboto Slab';
-    color: var(--dorÃ©);
+    color: var(--dorée);
     font-size: 1.4rem;
 
 }
 
 h4 {
     font-family: 'Roboto Slab';
-    color: var(--dorÃ©);
+    color: var(--dorée);
     font-size: 1.1rem;
 }
 
 a {
     font-family: 'Roboto Slab';
     text-decoration: none;
-    color: var(--dorÃ©);
+    color: var(--dorée);
 }
 
 a:hover {
-    border-bottom: solid 1px var(--dorÃ©);
+    border-bottom: solid 1px var(--dorée);
 }
 
 body {
@@ -163,7 +163,7 @@ body {
 }
 
 .active:hover {
-    color: var(--dorÃ©);
+    color: var(--dorée);
 }
 
 /* ============================== Fin config gÃ©nÃ©rale ==================================== */
@@ -178,6 +178,7 @@ body {
 #bandeau img {
     padding-left: 40px;
 }
+
 
 #menuPrincipal ul {
     display: flex;
@@ -203,7 +204,7 @@ body {
 #menuPrincipal #burger {
     display: flex;
     font-size: 3rem;
-    color: var(--dorÃ©);
+    color: var(--dorée);
     justify-content: flex-end;
     padding-right: 10px;
     padding-top: 10px;
@@ -230,7 +231,7 @@ body {
     }
 
     #menuPrincipal ul li a:hover {
-        border-bottom: solid 1px var(--dorÃ©);
+        border-bottom: solid 1px var(--dorée);
     }
 }
 
@@ -324,7 +325,7 @@ body {
 }
 
 #famille .prenom {
-    color: var(--dorÃ©);
+    color: var(--dorée);
 }
 
 #famille .cecile .photoCecile {
@@ -346,7 +347,7 @@ body {
 }
 
 #famille .louanne .listeLouanne {
-    color: var(--dorÃ©);
+    color: var(--dorée);
     display: flex;
     justify-content: center;
 }
@@ -421,6 +422,7 @@ body {
     padding: 20px;
     color: white;
     gap: 20px;
+    border-bottom: 1px solid var(--dorée);
 }
 
 #mesArticles .monArticle a {
@@ -464,7 +466,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
-
+    border-bottom: 1px solid var(--dorée);
     margin: 20px 10px;
     padding: 20px;
     color: white;
@@ -633,7 +635,7 @@ body {
 }
 
 #pied ul li a:hover {
-    border-bottom: solid 1px var(--dorÃ©);
+    border-bottom: solid 1px var(--dorée);
 }
 
 
@@ -691,7 +693,7 @@ body {
     border: none;
     background: none;
     width: 100%;
-    color: var(--dorÃ©);
+    color: var(--dorée);
     font-weight: 600;
 }
 
@@ -703,7 +705,7 @@ body {
 }
 
 #formulaire #form p:nth-of-type(1) {
-    color: var(--dorÃ©);
+    color: var(--dorée);
 }
 
 #formulaire #form p:nth-of-type(1) input {
@@ -711,7 +713,7 @@ body {
 }
 
 #formulaire #form p:nth-of-type(5) {
-    border: solid 1px var(--dorÃ©);
+    border: solid 1px var(--dorée);
 }
 
 #formulaire #form p:nth-of-type(1),
@@ -724,14 +726,14 @@ body {
 #formulaire #form p:nth-of-type(2) input,
 #formulaire #form p:nth-of-type(3) input,
 #formulaire #form p:nth-of-type(7) input {
-    border: 1px solid var(--dorÃ©);
+    border: 1px solid var(--dorée);
     border-radius: 20px;
     padding: 8px 12px;
     margin: 10px 0;
 }
 
 #formulaire #form p:nth-of-type(7) input {
-    background-color: var(--dorÃ©);
+    background-color: var(--dorée);
 
 }
 
@@ -756,10 +758,10 @@ body {
     min-height: 250px;
 }
 
-#carte p .dorÃ© {
+#carte p .dorée--dorée {
     font-family: 'Roboto Slab';
     font-size: 1.5rem;
-    color: var(--dorÃ©);
+    color: var(--dorée);
 }
 
 #carte p {
@@ -829,7 +831,7 @@ body {
     display: grid;
     grid-template-columns: auto-fill;
     grid-template-rows: repeat(3, auto);
-    border: 1px solid var(--dorÃ©);
+    border: 1px solid var(--dorée);
     border-radius: 25px;
     box-shadow: 4px 8px 8px 8px rgba(33, 33, 33, 0.5);
 

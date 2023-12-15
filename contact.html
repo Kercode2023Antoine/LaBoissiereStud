@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Boissière Stud - Contact </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<!-- ============================== Header ===================================== -->    
     <header id="bandeau" class="container">
         <a href="index.html"><img id="logo" src="images/Logo_1-removebg-preview.png" alt="www.laboissierestud.com"></a>
         <nav id="menuPrincipal" role="navigation">
             <div id="burger">
-                <i class="fa-solid fa-bars"></i>
+                <img class="bars" src="images/bars-solid.svg" alt="">
             </div>
             <ul>
                 <li><a href="index.html" id="linkIndex">Accueil</a></li>
@@ -27,7 +25,9 @@
             </ul>
         </nav>
     </header>
+<!-- ============================== Fin Header ===================================== -->    
     <main id="contenu" class="container mainContact">
+<!-- ============================== Formulaire ===================================== -->
         <h2> Nous Contacter</h2>
         <section id="formulaire">
             <form action="envoyerform.php" method="post" id="form">
@@ -66,14 +66,16 @@
                 </p>
             </form>
         </section>
+<!-- ============================== fin formulaire===================================== -->        
         <h2>où nous trouver ?</h2>
+<!-- ============================== carte ===================================== -->
         <section id="carte">
             <p>
                 <span class="doré">La Boissière Stud</span><br>
                 87220 FEYTIAT<br>
                 FRANCE<br>
                 06.74.79.25.67<br>
-                elevageduvincou@gmail.com<br>
+
             </p>
 
             <iframe
@@ -82,7 +84,9 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
+<!-- ============================== fin Header ===================================== -->
 
+<!-- ============================== footer ===================================== -->
     <footer id="pied" class="container">
 
         <ul>
@@ -95,21 +99,27 @@
             <li> <a href="contact.html">
                     Contact
                 </a></li>
-                <div id="hautPage"> <li>    
-                    <i class="fa-solid fa-circle-up"></i> Haut&nbsp;de&nbsp;page <i class="fa-solid fa-circle-up"></i>
-                 </li></div>
+            <li>
+                <div id="hautPage">
+                    <img src="images/circle-up-solid.svg" alt="Haut de page"> Haut&nbsp;de&nbsp;page <img
+                        src="images/circle-up-solid.svg" alt="Haut de page">
+                </div>
+            </li>
         </ul>
         <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
     </footer>
-    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<!-- ============================== fin footer ===================================== -->  
 
+<!-- ============================== scripts ===================================== -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
     <script src="scripts/active.js"></script>
-    <script src="scripts/rgpd.js"></script>
     <script type="text/javascript">
 
-        $("#menuPrincipal #burger i").click(function () {
+        $("#menuPrincipal #burger img").click(function () {
             $("#menuPrincipal ul").addClass("on").slideToggle(1500);
         })
+
+
     </script>
 </body>
 

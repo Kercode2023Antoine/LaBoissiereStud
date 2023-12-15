@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Boissière Stud - News</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- ============================== Header ===================================== -->
     <header id="bandeau" class="container">
         <a href="index.html"><img id="logo" src="images/Logo_1-removebg-preview.png" alt="www.laboissierestud.com"></a>
         <nav id="menuPrincipal" role="navigation">
             <div id="burger">
-                <i class="fa-solid fa-bars"></i>
+                <img class="bars" src="images/bars-solid.svg" alt="">
             </div>
             <ul>
                 <li><a href="index.html" id="linkIndex">Accueil</a></li>
@@ -27,14 +25,17 @@
             </ul>
         </nav>
     </header>
+    
+<!-- ============================== Fin Header ===================================== -->
     <main id="contenu" class="container mainNews">
+        <!-- ============================== Actualités ===================================== -->
         <h2>Actualités</h2>
 
         <section id="mesArticles">
             <article class="monArticle">
                 <h3>Recherche 2 poneys taille 1m45 à 1m49 ferré. Nous étudierons toute proposition répondant aux
                     critères:</h3>
-                <img src="images/saut_actu.jpg"  alt="www.laboissierestud.com">
+                <img src="images/saut_actu.jpg" alt="Cheval sautant au dessus d'un obstacle">
                 <p>
                     - une femelle 5 ans, bien née, BPO > + 10, à fort potentiel, pour valorisation Cycles Classiques
                     CSO.
@@ -45,7 +46,7 @@
             </article>
             <article class="monArticle">
                 <h3>Reprise des concours pour Paps Late</h3>
-                <img src="images/actu_2.jpg" alt="www.laboissierestud.com">
+                <img src="images/actu_2.jpg" alt="homme sur un cheval">
                 <p>La saison de monte est déjà bien avancée. Les ponettes accueillies en monte en main à l'élevage ont
                     été honorées avec efficacité!
                     Avec la reprise des concours, Paps Late a retrouvé Oscar son cavalier avec réussite, puisqu'ils
@@ -72,7 +73,7 @@
             </article>
             <article class="grandArticle">
                 <h3>Monte 2021: Objectif fertilité</h3>
-                <img src="images/actu_4.jpg"  alt="www.laboissierestud.com">
+                <img src="images/actu_4.jpg" alt="Cheval sautant au dessus d'un obstacle">
                 <p>Petite réflexion d'automne.
                     Rapide historique concernant l'utilisation de l'insémination artificielle en semence congelée chez
                     les chevaux... et donc les poneys!
@@ -132,7 +133,9 @@
             </article>
 
         </section>
+        <!-- ============================== Fin Actualités ===================================== -->
     </main>
+    <!-- ============================== Footer ===================================== -->
     <footer id="pied" class="container">
 
         <ul>
@@ -145,18 +148,24 @@
             <li> <a href="contact.html">
                     Contact
                 </a></li>
-                <div id="hautPage"> <li>    
-                    <i class="fa-solid fa-circle-up"></i> Haut&nbsp;de&nbsp;page <i class="fa-solid fa-circle-up"></i>
-                 </li></div>
+            <li>
+                <div id="hautPage">
+                    <img src="images/circle-up-solid.svg" alt="Haut de page"> Haut&nbsp;de&nbsp;page <img
+                        src="images/circle-up-solid.svg" alt="Haut de page">
+                </div>
+            </li>
         </ul>
         <h3 class="copyright">COPYRIGHT&copy Greta Vannes - Projet d’étude</h3>
     </footer>
+    <!-- ============================== fin Footer ===================================== -->
+
+    <!-- ============================== Scripts ===================================== -->
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
     <script src="scripts/active.js"></script>
 
     <script type="text/javascript">
 
-        $("#menuPrincipal #burger i").click(function () {
+        $("#menuPrincipal #burger img").click(function () {
             $("#menuPrincipal ul").addClass("on").slideToggle(1500);
         })
     </script>
