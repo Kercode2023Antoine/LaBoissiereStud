@@ -138,9 +138,7 @@ a:hover {
 body {
     font-family: 'Roboto';
     font-size: 18px;
-    /* background: url(images/ciel.jpg) no-repeat;
-    background-size: cover;
-    background-position: 50% 50%; */
+    
 
 }
 
@@ -194,6 +192,7 @@ body {
     flex-direction: column;
     float: right;
     margin-right: 20px;
+    text-align: right;
     
 }
 
@@ -244,11 +243,11 @@ body {
     margin: 20px 10px;
     padding: 20px;
     background: linear-gradient(to bottom, #205629, #040C05);
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 
 }
 #philosophie img {
-    width: 25%;
+    width: 30%;
 }
 #philosophie .images {
     display: flex;
@@ -284,6 +283,7 @@ body {
 
 
 
+
 @media screen and (min-width:768px) {
 
 
@@ -305,7 +305,7 @@ body {
     margin: 20px 10px;
     padding: 20px;
     background: linear-gradient(to bottom, #205629, #040C05);
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 }
 
 #famille .cecile,
@@ -349,7 +349,8 @@ body {
 #famille .louanne .listeLouanne {
     color: var(--dorée);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
 }
 
 
@@ -409,7 +410,7 @@ body {
     background: linear-gradient(to bottom, #205629, #040C05);
     padding: 20px;
     margin : 20px 10px;
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 
 }
 
@@ -494,7 +495,8 @@ body {
     margin-bottom: 20px;
 }
 
-#mesArticles .grandArticle p:last-of-type {
+#mesArticles .grandArticle p:last-of-type,
+#mesArticles .grandArticle ul {
     display: none;
 
 }
@@ -539,18 +541,18 @@ body {
     #mesArticles .monArticle a {
         display: block;
         grid-area: 3/3/4/4;
-        width: 140px;
+        /* width: 140px; */
         background-color: var(--vert);
-        border-radius: 10px;
-        padding: 5px 5px;
+        border-radius: 20px;
+        padding: 15px 10px;
         margin-bottom: 15px;
     }
 
     #mesArticles .grandArticle {
         
         display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, auto-fill);
+        grid-template-rows: repeat(4, auto-fill);
         margin: 20px 10px;
         padding: 20px;
         color: white;
@@ -567,16 +569,23 @@ body {
         grid-area: 2/1/3/2;
     }
 
-    #mesArticles .grandArticle p {
+
+    #mesArticles .grandArticle p:nth-of-type(1){
         grid-area: 2/2/4/4;
     }
+
+
 }
 
 @media screen and (min-width: 1050px) {
-    #mesArticles .grandArticle p:last-of-type {
+     #mesArticles .grandArticle p:last-of-type  {
         display: block;
-        grid-area: 3/1/4/4
+        grid-area: 4/1/5/4
     }
+    #mesArticles .grandArticle ul{
+        display: block;
+    }
+
 }
 
 /* ==================== Fin ActualitÃ©s/News ===================== */
@@ -586,7 +595,7 @@ body {
     background: linear-gradient(to bottom, #205629, #040C05);
     padding: 20px;
     margin: 20px 10px;
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 }
 
 .nivo-caption {
@@ -663,7 +672,7 @@ body {
     padding: 20px;
     margin: 20px 10px;
     background: linear-gradient(to bottom, #205629, #040C05);
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 }
 
 #formulaire p input:focus,
@@ -752,7 +761,7 @@ body {
     margin: 20px 10px;
     padding: 20px;
     background: linear-gradient(to bottom, #205629, #040C05);
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
     display: flex;
     justify-content: space-between;
     min-height: 250px;
@@ -821,7 +830,7 @@ body {
     grid-template-columns: repeat(auto-fill, 330px);
     gap: 30px;
     justify-content: center;
-    box-shadow: 7px 10px 10px 7px rgba(73, 73, 73, 0.4);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 
 }
 
@@ -833,7 +842,7 @@ body {
     grid-template-rows: repeat(3, auto);
     border: 1px solid var(--dorée);
     border-radius: 25px;
-    box-shadow: 4px 8px 8px 8px rgba(33, 33, 33, 0.5);
+    box-shadow: 2px 4px 4px 2px rgba(73, 73, 73, 0.4);
 
 }
 
